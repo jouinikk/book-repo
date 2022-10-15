@@ -12,16 +12,17 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'bookstore';
-  val="invisible";
-
+  disp="d-none";
   books=[
-    {id: 1,titre:"the slight edge",auteur:"jeff olson",prix:23.00},
-    {id: 2,titre:"atomic habits",auteur:"james clear",prix:10.00},
-    {id: 3,titre:"so good they can't ignore you",auteur:"cal newport",prix: 18.70},
-    {id: 4,titre:"la maladie",auteur:"Monsieur molliaire",prix: 400}
+    {id: 1,titre:"the slight edge",auteur:"jeff olson",prix:23.00,lien:"https://m.media-amazon.com/images/I/41hC5Pli3SL.jpg"},
+    {id: 2,titre:"atomic habits",auteur:"james clear",prix:10.00,lien:"https://m.media-amazon.com/images/I/51-uspgqWIL._AC_SY780_.jpg"},
+    {id: 3,titre:"so good they can't ignore you",auteur:"cal newport",prix: 18.70,lien:"https://m.media-amazon.com/images/I/41sAVddTaAL._SX328_BO1,204,203,200_.jpg"},
+    {id: 4,titre:"la maladie",auteur:"Monsieur molliaire",prix: 400,lien:"https://bibliothequenumerique.tv5monde.com/media/img/3c0/04/123_Le-Malade-imaginaire.jpg"}
   ]
 
   afficherForm(){
-    this.val="visible";
+    this.disp="d-block";
   }
+
+  
 }
